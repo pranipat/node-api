@@ -13,7 +13,7 @@
     "production": "docker-compose -f docker/docker-compose.yml up -d",
     "build": "docker-compose -f docker/docker-compose.yml build"
   },
-  "author": "Anil Kumar Nayak",
+  "author": "Pranipat Khatua <pranipat@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
