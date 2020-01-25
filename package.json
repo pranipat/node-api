@@ -1,0 +1,31 @@
+{
+  "name": "blockchain-api",
+  "version": "1.0.0",
+  "description": "A restful api build on expressjs",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "docker-compose -f docker/docker-compose.test.yml up --build --abort-on-container-exit",
+    "build-dev": "npm install",
+    "dev": "cross-env NODE_ENV=local nodemon index.js --ignore . --watch index.js --watch ./routes --watch ./models",
+    "production": "docker-compose -f docker/docker-compose.yml up -d",
+    "build": "docker-compose -f docker/docker-compose.yml build"
+  },
+  "author": "Anil Kumar Nayak",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.0",
+    "supertest": "^4.0.2",
+    "tape": "^4.13.0"
+  }
+}
