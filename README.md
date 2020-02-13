@@ -5,8 +5,8 @@ To run the project locally you need:
 2) NPM
 3) Mongo Database runnning locally
 
-To run the project in docker please install:
-1) docket
+To run the project in docker container please install:
+1) docker
 2) docker-compose
 
 # Build Dev
