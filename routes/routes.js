@@ -89,3 +89,11 @@ router.get('/api/v1/session/name', async (req, res, next) => {
         res.status(400).send({status:false,error});
     } 
 });
+
+router.get('/', async (req, res, next) => {
+    try {
+        res.status(200).send({status:true,message:'Blockchain-Api'});
+    } catch (error) {
+        res.status(400).send({status:false,error});
+    }
+});
