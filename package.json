@@ -14,7 +14,7 @@
     "production": "docker-compose -f docker/docker-compose.yml up -d",
     "build": "docker-compose -f docker/docker-compose.yml build"
   },
-  "author": "Pranipat Khatua <pranipat@gmail.com>",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
